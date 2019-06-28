@@ -13,7 +13,7 @@ function extract(str, key) {
 
 //Set the user's favorite background color
 function doColor() {
-	var h = location.hash.substring(1);
+	var h = "faveColor=red" //location.hash.substring(1);
 	if (h.indexOf("faveColor=") >= 0) {
 		document.cookie = h; // Defect here
 	}
